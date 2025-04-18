@@ -26,3 +26,26 @@ public class Main {
             try {
                 switch (choice) {
 
+                        case 1:
+                        System.out.print("Enter Name: ");
+                        String name = scan.nextLine();
+                        if (name.isEmpty()) throw new EmptyFieldException("Name cannot be empty.");
+
+                        System.out.print("Enter PRN: ");
+                        long prn = Long.parseLong(scan.nextLine());
+
+                        System.out.print("Enter Branch: ");
+                        String branch = scan.nextLine();
+                        if (branch.isEmpty()) throw new EmptyFieldException("Branch cannot be empty.");
+
+                        System.out.print("Enter Batch: ");
+                        String batch = scan.nextLine();
+
+                        System.out.print("Enter CGPA: ");
+                        double cgpa = Double.parseDouble(scan.nextLine());
+
+                        Student student = new Student(name, prn, branch, batch, cgpa);
+                        operations.addStudent(student);
+                        break;
+
+
