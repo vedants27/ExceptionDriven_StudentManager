@@ -47,5 +47,13 @@ class StudentOperations {
         }
         throw new StudentNotFoundException("Student with name " + name + " not found.");
     }
+        public Student searchByPosition(int position) throws StudentNotFoundException {
+        if (position >= 0 && position < students.size()) {
+            return students.get(position);
+        } else {
+            throw new StudentNotFoundException("Invalid position: " + position);
+        }
+    }
+
 
 
