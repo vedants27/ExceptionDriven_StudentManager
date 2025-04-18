@@ -58,6 +58,13 @@ public class Main {
                         operations.searchByPRN(prn).display();
                         break;
 
+                        case 4:
+                        System.out.print("Enter Name: ");
+                        name = scan.nextLine();
+                        operations.searchByName(name).display();
+                        break;
+
+
 
 
 
