@@ -89,6 +89,13 @@ public class Main {
                         operations.updateStudent(prn, name, branch, batch, cgpa);
                         break;
 
+                        case 7:
+                        System.out.print("Enter PRN to delete: ");
+                        prn = Long.parseLong(scan.nextLine());
+                        operations.deleteStudent(prn);
+                        break;
+
+
 
 
 
