@@ -64,6 +64,13 @@ public class Main {
                         operations.searchByName(name).display();
                         break;
 
+                        case 5:
+                        System.out.print("Enter position (starting from 0): ");
+                        int pos = Integer.parseInt(scan.nextLine());
+                        operations.searchByPosition(pos).display();
+                        break;
+
+
 
 
 
