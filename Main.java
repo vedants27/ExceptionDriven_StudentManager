@@ -48,4 +48,9 @@ public class Main {
                         operations.addStudent(student);
                         break;
 
+                        case 2:
+                        operations.displayStudents();
+                        break;
+
+
 
