@@ -15,3 +15,8 @@ class InvalidCGPAException extends Exception {
         super(message);
     }
 }
+class EmptyFieldException extends Exception {
+    public EmptyFieldException(String message) {
+        super(message);
+    }
+}
