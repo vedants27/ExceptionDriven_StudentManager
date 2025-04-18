@@ -52,5 +52,12 @@ public class Main {
                         operations.displayStudents();
                         break;
 
+                        case 3:
+                        System.out.print("Enter PRN: ");
+                        prn = Long.parseLong(scan.nextLine());
+                        operations.searchByPRN(prn).display();
+                        break;
+
+
 
 
