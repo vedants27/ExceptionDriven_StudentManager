@@ -95,6 +95,12 @@ public class Main {
                         operations.deleteStudent(prn);
                         break;
 
+                        case 0:
+                        System.out.println("Exiting...");
+                        scan.close();
+                        return;
+
+
 
 
 
