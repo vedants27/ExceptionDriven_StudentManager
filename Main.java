@@ -100,6 +100,15 @@ public class Main {
                         scan.close();
                         return;
 
+                        default:
+                        System.out.println("Invalid option.");
+                }
+            } catch (Exception e) {
+                System.out.println("Error: " + e.getMessage());
+            }
+        }
+
+
 
 
 
